@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Genshin';
+    src: url('../fontes/zh-cn.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    /* Cores padrão do site */
+    --cor00: #C2D8EE;
+    --cor01: #A0B2C3;
+    --cor02: #637E99;
+    --cor03: #35526F;
+    --cor04: #162D44;
+    --cor05: #040F1A;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Montserrat", sans-serif;
+    --fonte-genshin: "Genshin", cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(343deg, var(--cor05), var(--cor04));
+    font-family: var(--fonte-padrao);
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.600);
+    padding: 20px;
+    height: 27px;
+}
+
+header div.header-logo {
+    display: inline-block;
+}
+
+header nav.header-nav {
+    display: inline-block;
+    padding-left: 90px;
+}
+
+header div#login {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+header nav.header-nav > a {
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+header nav.header-nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.500);
+    transition-duration: 0.4s;
+    font-weight: 600;
+}
+
+main {
+    max-width: 1200px;
+    background-color: var(--cor00);
+    margin: auto;
+    text-align: center;
+    height: 1200px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adiciona um gap uniforme entre os itens */
+}
+
+main section > a {
+    display: inline-block;
+    max-width: 170px;
+    margin: 0; /* Remove margem extra */
+    text-decoration: none;
+    font-weight: normal;
+}
+
+main > section > a > img.imagem-personagem {
+    width: 60%;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+}
+
+main section a h2 {
+    font-family: var(--fonte-genshin);
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+}
