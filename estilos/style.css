@@ -24,27 +24,31 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.600);
-    padding: 20px;
-    height: 27px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header div.header-logo {
-    display: inline-block;
+.header-logo a {
+    display: flex;
+    align-items: center;
 }
 
-header nav.header-nav {
-    display: inline-block;
-    padding-left: 90px;
+.header-logo img {
+    max-height: 35px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 20px;
 }
 
-header div#login {
-    display: inline-block;
-    position: absolute;
-    right: 0;
+.header-nav {
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
 }
 
-header nav.header-nav > a {
+.header-nav > a {
     font-family: var(--fonte-destaque);
     font-size: 1.2em;
     padding: 12px 20px;
@@ -54,13 +58,13 @@ header nav.header-nav > a {
     border-radius: 4px;
 }
 
-header nav.header-nav > a:hover {
-    background-color: rgba(0, 0, 0, 0.500);
+.header-nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
     transition-duration: 0.4s;
     font-weight: 600;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     header nav.menu-mobile {
         display: none;
     }
@@ -68,9 +72,13 @@ header nav.header-nav > a:hover {
     header div#menu-icon img {
         display: none;
     }
+
+    header div.header-logo-mobile {
+        display: none;
+    }
 }
 /* Media query para telas com largura de 1000px ou menos */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     header nav.header-nav {
         display: none;
     }
@@ -80,9 +88,19 @@ header nav.header-nav > a:hover {
     }
 
     header {
+        padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    header div.header-logo-mobile  {
+        margin: auto;
+    }
+
+    header div.header-logo-mobile img {
+        max-height: 35px; /* Ajuste conforme necessário */
+        height: auto;
     }
 
     header div#menu-icon {
@@ -91,18 +109,18 @@ header nav.header-nav > a:hover {
     }
 
     header div#menu-icon img {
-        width: 25%;
+        max-width: 50px;
+        max-height: 50px;
         display: block;
     }
 
     header nav.menu-mobile {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 73px;
         left: 2px;
         background-color: rgba(0, 0, 0, 0.600);
         width: 50%;
-        text-align: left;
     }
 
     header nav.menu-mobile a {
