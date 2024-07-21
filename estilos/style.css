@@ -60,6 +60,70 @@ header nav.header-nav > a:hover {
     font-weight: 600;
 }
 
+@media (min-width: 1000px) {
+    header nav.menu-mobile {
+        display: none;
+    }
+
+    header div#menu-icon img {
+        display: none;
+    }
+}
+/* Media query para telas com largura de 1000px ou menos */
+@media (max-width: 1000px) {
+    header nav.header-nav {
+        display: none;
+    }
+
+    header div.header-logo  {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div#menu-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    header div#menu-icon img {
+        width: 25%;
+        display: block;
+    }
+
+    header nav.menu-mobile {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 2px;
+        background-color: rgba(0, 0, 0, 0.600);
+        width: 50%;
+        text-align: left;
+    }
+
+    header nav.menu-mobile a {
+        text-align: center;
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+        font-family: var(--fonte-destaque);
+        font-size: 1.1em;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    header nav.menu-mobile a:hover {
+        background-color: rgba(0, 0, 0, 0.500);
+        transition-duration: 0.7s;
+        font-weight: 600;
+    }
+}
+
 main  {
     background-image: url('../imagens/papel-de-parede/genshin-wallpaper-grande-1080p.jpg');
     background-position: center center;
