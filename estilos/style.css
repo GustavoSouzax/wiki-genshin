@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: 'Genshin';
+    src: url('../fontes/zh-cn.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 :root {
     /* Cores padrão do site */
     --cor00: #C2D8EE;
@@ -12,6 +19,7 @@
     --cor05: #040F1A;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Montserrat", sans-serif;
+    --fonte-genshin: "Genshin", cursive;
 }
 
 * {
@@ -64,26 +72,26 @@ header {
     font-weight: 600;
 }
 
+#suporte img {
+    max-height: 27px;
+    height: auto;
+    padding: 5px;
+}
+
+#login img {
+    max-height: 26px;
+    height: auto;
+    padding: 5px;
+}
+
 @media (min-width: 900px) {
-    header nav.menu-mobile {
-        display: none;
-    }
-
-    header div#menu-icon img {
-        display: none;
-    }
-
-    header div.header-logo-mobile {
+    header nav.menu-mobile a, header div.header-logo-mobile, header div#menu-icon img {
         display: none;
     }
 }
-/* Media query para telas com largura de 1000px ou menos */
+/* Media query para dispositivos moveis */
 @media (max-width: 900px) {
-    header nav.header-nav {
-        display: none;
-    }
-
-    header div.header-logo  {
+    header nav.header-nav, header div.header-logo, #suporte {
         display: none;
     }
 
@@ -120,7 +128,7 @@ header {
         top: 73px;
         left: 2px;
         background-color: rgba(0, 0, 0, 0.600);
-        width: 50%;
+        max-width: 55%;
     }
 
     header nav.menu-mobile a {
@@ -147,4 +155,6 @@ main  {
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
 }

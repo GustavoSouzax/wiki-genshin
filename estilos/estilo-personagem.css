@@ -17,6 +17,8 @@
     --cor03: #35526F;
     --cor04: #162D44;
     --cor05: #040F1A;
+    --branco: white;
+    --preto: black;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Montserrat", sans-serif;
     --fonte-genshin: "Genshin", cursive;
@@ -62,7 +64,7 @@ header {
     font-size: 1.2em;
     padding: 12px 20px;
     text-decoration: none;
-    color: white;
+    color: var(--branco);
     font-weight: 500;
     border-radius: 4px;
 }
@@ -74,25 +76,13 @@ header {
 }
 
 @media (min-width: 900px) {
-    header nav.menu-mobile {
-        display: none;
-    }
-
-    header div#menu-icon img {
-        display: none;
-    }
-
-    header div.header-logo-mobile {
+    header nav.menu-mobile a, header div.header-logo-mobile, header div#menu-icon img {
         display: none;
     }
 }
-/* Media query para telas com largura de 1000px ou menos */
+/* Media query para dispositivos moveis */
 @media (max-width: 900px) {
-    header nav.header-nav {
-        display: none;
-    }
-
-    header div.header-logo  {
+    header nav.header-nav, header div.header-logo, #suporte {
         display: none;
     }
 
