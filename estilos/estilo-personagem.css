@@ -75,6 +75,18 @@ header {
     font-weight: 600;
 }
 
+#suporte img {
+    max-height: 27px;
+    height: auto;
+    padding: 5px;
+}
+
+#login img {
+    max-height: 26px;
+    height: auto;
+    padding: 5px;
+}
+
 @media (min-width: 900px) {
     header nav.menu-mobile a, header div.header-logo-mobile, header div#menu-icon img {
         display: none;

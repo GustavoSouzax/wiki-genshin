@@ -151,10 +151,7 @@ header {
 }
 
 main  {
-    background-image: url('../imagens/papel-de-parede/genshin-wallpaper-grande-1080p.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
     height: 100vh;
+    background: var(--cor04) url('../imagens/papel-de-parede/genshin-wallpaper-grande-1080p.jpg') center center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
