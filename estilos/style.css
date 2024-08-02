@@ -151,7 +151,25 @@ header {
 }
 
 main  {
-    height: 100vh;
+    height: 90vh;
     background: var(--cor04) url('../imagens/papel-de-parede/genshin-wallpaper-grande-1080p.jpg') center center no-repeat fixed;
     background-size: cover;
+}
+
+footer {
+    padding-top: 3vh;
+    height: 7vh;
+    background-color: var(--cor05);
+}
+
+footer p, footer p a {
+    color: white;
+    text-align: center;
+    font-size: 1.05em;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
