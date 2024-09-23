@@ -1,175 +1,302 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600;700&display=swap');
 
 @font-face {
-    font-family: 'Genshin';
-    src: url('../fontes/zh-cn.ttf') format('truetype');
-    font-style: normal;
+    font-family: Genshin;
+    src: url('../fontes/zh-cn.ttf');
     font-weight: normal;
+    font-style: normal;
 }
-
+    
 :root {
-    /* Cores padrão do site */
-    --cor00: #C2D8EE;
-    --cor01: #A0B2C3;
-    --cor02: #637E99;
-    --cor03: #35526F;
-    --cor04: #162D44;
-    --cor05: #040F1A;
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: "Montserrat", sans-serif;
-    --fonte-genshin: "Genshin", cursive;
+    --font-genshin: Genshin;
+    --primary-color: #4a5d75;
+    --secondary-color: #bf9f7e;
+    --accent-color: #e6c3a5;
+    --text-color: #333;
+    --bg-color: #f0e9e2;
 }
 
-* {
-    padding: 0px;
-    margin: 0px;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-body {
-    font-family: var(--fonte-padrao);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.header-logo a {
-    display: flex;
     align-items: center;
 }
 
-.header-logo img {
-    max-height: 35px; /* Ajuste conforme necessário */
-    height: auto;
-    margin-right: 20px;
-}
-
-.header-nav {
-    display: flex;
-    gap: 10px;
-    margin-right: auto;
-}
-
-.header-nav > a {
-    font-family: var(--fonte-destaque);
-    font-size: 1.2em;
-    padding: 12px 20px;
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
     text-decoration: none;
-    color: white;
-    font-weight: 500;
-    border-radius: 4px;
 }
 
-.header-nav > a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition-duration: 0.4s;
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 15px;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-#suporte img {
-    max-height: 27px;
-    height: auto;
-    padding: 5px;
+.nav-links a:hover {
+    color: var(--primary-color);
 }
 
-#login img {
-    max-height: 26px;
-    height: auto;
-    padding: 5px;
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagens/papel-de-parede/genshin-wallpaper-grande-1080p.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-@media (min-width: 900px) {
-    header nav.menu-mobile a, header div.header-logo-mobile, header div#menu-icon img {
-        display: none;
-    }
-}
-/* Media query para dispositivos moveis */
-@media (max-width: 900px) {
-    header nav.header-nav, header div.header-logo, #suporte {
-        display: none;
-    }
-
-    header {
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header div.header-logo-mobile  {
-        margin: auto;
-    }
-
-    header div.header-logo-mobile img {
-        max-height: 35px; /* Ajuste conforme necessário */
-        height: auto;
-    }
-
-    header div#menu-icon {
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    header div#menu-icon img {
-        max-width: 50px;
-        max-height: 55px;
-        display: block;
-    }
-
-    header nav.menu-mobile {
-        display: none;
-        position: absolute;
-        top: 73px;
-        left: 2px;
-        background-color: rgba(0, 0, 0, 0.600);
-        max-width: 55%;
-    }
-
-    header nav.menu-mobile a {
-        text-align: center;
-        display: block;
-        padding: 12px 20px;
-        text-decoration: none;
-        color: white;
-        font-family: var(--fonte-destaque);
-        font-size: 1.1em;
-        font-weight: 500;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    header nav.menu-mobile a:hover {
-        background-color: rgba(0, 0, 0, 0.500);
-        transition-duration: 0.7s;
-        font-weight: 600;
-    }
+.hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
 }
 
-main  {
-    height: 90vh;
-    background: var(--cor04) url('../imagens/papel-de-parede/genshin-wallpaper-grande-1080p.jpg') center center no-repeat fixed;
-    background-size: cover;
+.hero-content p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.5s;
+    animation-fill-mode: both;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    display: block;
+    margin: auto;
+    width: 71%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tab {
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin: 0 10px;
+    border-radius: 30px;
+}
+
+.tab:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
 }
 
 footer {
-    padding-top: 3vh;
-    height: 7vh;
-    background-color: var(--cor05);
-}
-
-footer p, footer p a {
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
-    font-size: 1.05em;
-    text-decoration: none;
+    padding: 30px 0;
+    margin-top: 60px;
 }
 
-footer > p > a:hover {
-    font-weight: bold;
-    text-decoration: underline;
+.social-icons {
+    position: fixed;
+    right: 20px; /* Changed from left: 20px to right: 20px */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .tab {
+        margin: 5px;
+    }
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
