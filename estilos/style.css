@@ -243,10 +243,12 @@ footer {
 
 .social-icons {
     position: fixed;
-    right: 20px; /* Changed from left: 20px to right: 20px */
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-icon {
@@ -261,11 +263,35 @@ footer {
     line-height: 40px;
     font-size: 18px;
     transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .social-icon:hover {
     background-color: var(--cor-primaria);
     transform: scale(1.1);
+}
+
+.social-toggle {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor02);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.social-toggle:active {
+    transform: scale(0.90);
+    background-color: var(--cor-primaria);
 }
 
 .mobile-menu {
@@ -335,5 +361,39 @@ footer {
 
     .mobile-menu.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .social-icons {
+        display: none;
+        right: 20px;
+        bottom: 80px;
+        top: auto;
+        transform: none;
+        flex-direction: column-reverse;
+    }
+
+    .social-toggle {
+        display: block;
+    }
+
+    .social-icons.active {
+        display: flex;
+    }
+
+    .social-icon {
+        margin: 5px 0;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

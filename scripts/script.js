@@ -1,3 +1,38 @@
+function handleSocialIcons() {
+    const socialToggle = document.querySelector('.social-toggle');
+    const socialIcons = document.querySelector('.social-icons');
+    const socialIconLinks = document.querySelectorAll('.social-icon');
+
+    if (window.innerWidth <= 768) {
+        socialToggle.addEventListener('click', function() {
+            socialIcons.classList.toggle('active');
+            if (socialIcons.classList.contains('active')) {
+                socialIconLinks.forEach((icon, index) => {
+                    setTimeout(() => {
+                        icon.style.animation = `fadeInUp 0.3s ease forwards ${index * 0.1}s`;
+                    }, 50);
+                });
+            } else {
+                socialIconLinks.forEach(icon => {
+                    icon.style.animation = '';
+                    icon.style.opacity = '0';
+                    icon.style.transform = 'translateY(20px)';
+                });
+            }
+        });
+    } else {
+        socialIcons.classList.remove('active');
+        socialIconLinks.forEach(icon => {
+            icon.style.animation = '';
+            icon.style.opacity = '1';
+            icon.style.transform = 'translateY(0)';
+        });
+    }
+}
+
+window.addEventListener('load', handleSocialIcons);
+window.addEventListener('resize', handleSocialIcons);
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tab-content");
