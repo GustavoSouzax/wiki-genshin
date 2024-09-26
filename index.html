@@ -1,406 +1,409 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Genshin Impact - Mundo de Teyvat</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="estilos/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav>
-                    <a href="#" class="logo">Genshin Impact</a>
-                    <div class="nav-links">
-                        <a href="#home">Início</a>
-                        <a href="#about">Sobre</a>
-                        <a href="#characters">Personagens</a>
-                        <a href="#news">Notícias</a>
-                    </div>
-                    <div class="hamburger-menu">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/GustavoSouzax" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gustavo-souzax/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto: knightsworks@outlook.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact - Mundo de Teyvat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Genshin Impact</a>
+                <div class="nav-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#characters" target="_self" rel="next">Personagens</a>
+                    <a href="#news">Notícias</a>
+                </div>
+                <div class="mobile-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
         </div>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>Bem-vindo a Teyvat</h1>
-                <p>Explore o mundo mágico de Genshin Impact</p>
+    </header>
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/GustavoSouzax" class="social-icon" target="_blank" rel="author"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gustavo-souzax/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto: knightsworks@outlook.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bem-vindo a Teyvat</h1>
+            <p>Explore o mundo mágico de Genshin Impact</p>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Genshin Impact</h2>
+            <p>Genshin Impact é um jogo de RPG de ação de mundo aberto. Embarque em uma jornada por Teyvat para encontrar sua família perdida e desvendar os mistérios deste mundo. Ao longo do caminho, você poderá controlar personagens únicos, cada um com habilidades e histórias próprias.</p>
+        </div>
+    </section>
+
+    <section class="section" id="characters">
+        <div class="container">
+            <h2 class="section-title">Personagens</h2>
+            <div class="tabs">
+                <button class="tab active" onclick="openTab(event, 'todos')">Todos</button>
+                <button class="tab" onclick="openTab(event, 'mondstadt')">Mondstadt</button>
+                <button class="tab" onclick="openTab(event, 'liyue')">Liyue</button>
+                <button class="tab" onclick="openTab(event, 'inazuma')">Inazuma</button>
+                <button class="tab" onclick="openTab(event, 'sumeru')">Sumeru</button>
+                <button class="tab" onclick="openTab(event, 'fontaine')">Fontaine</button>
+                <button class="tab" onclick="openTab(event, 'natlan')">Natlan</button>
             </div>
-        </section>
-    
-        <section class="section" id="about">
-            <div class="container">
-                <h2 class="section-title">Sobre Genshin Impact</h2>
-                <p>Genshin Impact é um jogo de RPG de ação de mundo aberto. Embarque em uma jornada por Teyvat para encontrar sua família perdida e desvendar os mistérios deste mundo. Ao longo do caminho, você poderá controlar personagens únicos, cada um com habilidades e histórias próprias.</p>
-            </div>
-        </section>
-    
-        <section class="section" id="characters">
-            <div class="container">
-                <h2 class="section-title">Personagens</h2>
-                <div class="tabs">
-                    <button class="tab active" onclick="openTab(event, 'todos')">Todos</button>
-                    <button class="tab" onclick="openTab(event, 'mondstadt')">Mondstadt</button>
-                    <button class="tab" onclick="openTab(event, 'liyue')">Liyue</button>
-                    <button class="tab" onclick="openTab(event, 'inazuma')">Inazuma</button>
-                    <button class="tab" onclick="openTab(event, 'sumeru')">Sumeru</button>
-                    <button class="tab" onclick="openTab(event, 'fontaine')">Fontaine</button>
-                    <button class="tab" onclick="openTab(event, 'natlan')">Natlan</button>
-                </div>
-                <div id="todos" class="tab-content active">
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-keqing.png" alt="Keqing" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Keqing</h3>
-                                <p class="project-description">A Yuheng do Liyue Qixing, conhecida por sua eficiência e dedicação.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-shougun.png" alt="Raiden Shogun" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Raiden Shogun</h3>
-                                <p class="project-description">A governante divina de Inazuma, que busca a eternidade.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-furina.png" alt="Furina" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Furina</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avatarIcon-arlecchino.png" alt="Arlecchino" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Cappuccino</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-kazuha.png" alt="Kazuha" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Kazuha</h3>
-                                <p class="project-description">Ronin sereno de Inazuma, guiado pela brisa e por sua liberdade.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-diluc.png" alt="Diluc" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Diluc</h3>
-                                <p class="project-description">O Cavaleiro Escuro de Mondstadt, dono da Adega do Alvorecer.</p>
-                            </div>
+            <div id="todos" class="tab-content active">
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-keqing.png" alt="Keqing" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Keqing</h3>
+                            <p class="project-description">A Yuheng do Liyue Qixing, conhecida por sua eficiência e dedicação.</p>
                         </div>
                     </div>
-                </div>
-                <div id="mondstadt" class="tab-content">
-                    <!-- Conteúdo para personagens de Mondstadt -->
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-jean-skin.png" alt="Jean" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Jean</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-klee.png" alt="Klee" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Klee</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-mona.png" alt="Mona" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Mona</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-eula.png" alt="Eula" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Eula</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-diluc.png" alt="Diluc" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Diluc</h3>
-                                <p class="project-description">O Cavaleiro Escuro de Mondstadt, dono da Adega do Alvorecer.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-venti.png" alt="Venti" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Venti</h3>
-                                <p class="project-description"></p>
-                            </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-shougun.png" alt="Raiden Shogun" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Raiden Shogun</h3>
+                            <p class="project-description">A governante divina de Inazuma, que busca a eternidade.</p>
                         </div>
                     </div>
-                </div>
-                <div id="liyue" class="tab-content">
-                    <!-- Conteúdo para personagens de Liyue -->
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-ganyu.png" alt="Ganyu" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Cocogoat</h3>
-                                <p class="project-description">A Yuheng do Liyue Qixing, conhecida por sua eficiência e dedicação.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-zhongli.png" alt="Zhongli" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Zhongli</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-hutao.png" alt="Hu Tao" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Hu Tao</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-xiao.png" alt="Xiao" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Xiao</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-ningguang.png" alt="Ningguang" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Ningguang</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-keqing.png" alt="Keqing" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Keqing</h3>
-                                <p class="project-description"></p>
-                            </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-furina.png" alt="Furina" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Furina</h3>
+                            <p class="project-description"></p>
                         </div>
                     </div>
-                </div>
-                <div id="inazuma" class="tab-content">
-                    <!-- Conteúdo para personagens de Inazuma -->
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-kokomi.png" alt="Kokomi" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Kokomi</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-shougun.png" alt="Raiden Shogun" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Raiden Shogun</h3>
-                                <p class="project-description">A governante divina de Inazuma, que busca a eternidade.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-yae.png" alt="Yae Miko" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Yae Miko</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-ayaka.png" alt="Ayaka" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Ayaka</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-itto.png" alt="Itto" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Itto</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-kazuha.png" alt="Kazuha" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Kazuha</h3>
-                                <p class="project-description">Ronin sereno de Inazuma, guiado pela brisa e por sua liberdade.</p>
-                            </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avatarIcon-arlecchino.png" alt="Arlecchino" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Cappuccino</h3>
+                            <p class="project-description"></p>
                         </div>
                     </div>
-                </div>
-                <div id="sumeru" class="tab-content">
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-nahida.png" alt="Nahida" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Nahida</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-tighnari.png" alt="Tighnari" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Tighnari</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-cyno.png" alt="Cyno" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Cyno</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-nilou.png" alt="Nilou" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Nilou</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-dehya.png" alt="Dehya" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Dehya</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-alhatham.png" alt="Alhatham" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Alhatham</h3>
-                                <p class="project-description"></p>
-                            </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-kazuha.png" alt="Kazuha" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Kazuha</h3>
+                            <p class="project-description">Ronin sereno de Inazuma, guiado pela brisa e por sua liberdade.</p>
                         </div>
                     </div>
-                </div>
-                <div id="fontaine" class="tab-content">
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-furina.png" alt="Furina" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Furina</h3>
-                                <p class="project-description">A Arconte Hydro de Fontaine, conhecida por sua justiça e teatralidade.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui_avataricon_clorinde.png" alt="Clorinde" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Clorinde</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui_avataricon_navia.png" alt="Navia" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Navia</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-neuvillette.png" alt="Neuvillette" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Neuvillette</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui-avataricon-wriothesley.png" alt="Wriothesley" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Wriothesley</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui_avataricon_sigewinne.png" alt="Sigewinne" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Sigewinne</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="natlan" class="tab-content">
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="imagens/character-icons/ui_avataricon_mavuika.jpg" alt="Mavuika" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title">Mavuika</h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/" alt="" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title"></h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/" alt="" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title"></h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/" alt="" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title"></h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/" alt="" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title"></h3>
-                                <p class="project-description"></p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="imagens/character-icons/" alt="" width="300" height="400">
-                            <div class="project-info">
-                                <h3 class="project-title"></h3>
-                                <p class="project-description"></p>
-                            </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-diluc.png" alt="Diluc" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Diluc</h3>
+                            <p class="project-description">O Cavaleiro Escuro de Mondstadt, dono da Adega do Alvorecer.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    
-        <section class="section" id="news">
-            <div class="container">
-                <h2 class="section-title">Notícias e Eventos</h2>
-                <p>Fique por dentro das últimas atualizações, eventos e notícias de Genshin Impact!</p>
-                <!-- Adicione aqui uma lista de notícias e eventos recentes -->
+            <div id="mondstadt" class="tab-content">
+                <!-- Conteúdo para personagens de Mondstadt -->
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-jean-skin.png" alt="Jean" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Jean</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-klee.png" alt="Klee" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Klee</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-mona.png" alt="Mona" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Mona</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-eula.png" alt="Eula" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Eula</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-diluc.png" alt="Diluc" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Diluc</h3>
+                            <p class="project-description">O Cavaleiro Escuro de Mondstadt, dono da Adega do Alvorecer.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-venti.png" alt="Venti" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Venti</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Genshin Impact</p>
+            <div id="liyue" class="tab-content">
+                <!-- Conteúdo para personagens de Liyue -->
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-ganyu.png" alt="Ganyu" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Cocogoat</h3>
+                            <p class="project-description">A Yuheng do Liyue Qixing, conhecida por sua eficiência e dedicação.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-zhongli.png" alt="Zhongli" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Zhongli</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-hutao.png" alt="Hu Tao" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Hu Tao</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-xiao.png" alt="Xiao" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Xiao</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-ningguang.png" alt="Ningguang" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Ningguang</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-keqing.png" alt="Keqing" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Keqing</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    
-        <script src="scripts/script.js"></script>
-    </body>
+            <div id="inazuma" class="tab-content">
+                <!-- Conteúdo para personagens de Inazuma -->
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-kokomi.png" alt="Kokomi" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Kokomi</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-shougun.png" alt="Raiden Shogun" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Raiden Shogun</h3>
+                            <p class="project-description">A governante divina de Inazuma, que busca a eternidade.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-yae.png" alt="Yae Miko" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Yae Miko</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-ayaka.png" alt="Ayaka" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Ayaka</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-itto.png" alt="Itto" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Itto</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-kazuha.png" alt="Kazuha" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Kazuha</h3>
+                            <p class="project-description">Ronin sereno de Inazuma, guiado pela brisa e por sua liberdade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sumeru" class="tab-content">
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-nahida.png" alt="Nahida" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Nahida</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-tighnari.png" alt="Tighnari" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Tighnari</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-cyno.png" alt="Cyno" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Cyno</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-nilou.png" alt="Nilou" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Nilou</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-dehya.png" alt="Dehya" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Dehya</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-alhatham.png" alt="Alhatham" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Alhatham</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fontaine" class="tab-content">
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-furina.png" alt="Furina" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Furina</h3>
+                            <p class="project-description">A Arconte Hydro de Fontaine, conhecida por sua justiça e teatralidade.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui_avataricon_clorinde.png" alt="Clorinde" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Clorinde</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui_avataricon_navia.png" alt="Navia" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Navia</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-neuvillette.png" alt="Neuvillette" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Neuvillette</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui-avataricon-wriothesley.png" alt="Wriothesley" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Wriothesley</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui_avataricon_sigewinne.png" alt="Sigewinne" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Sigewinne</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="natlan" class="tab-content">
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="imagens/character-icons/ui_avataricon_mavuika.jpg" alt="Mavuika" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title">Mavuika</h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/" alt="" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title"></h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/" alt="" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title"></h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/" alt="" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title"></h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/" alt="" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title"></h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imagens/character-icons/" alt="" width="300" height="400">
+                        <div class="project-info">
+                            <h3 class="project-title"></h3>
+                            <p class="project-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs" style="font-size: em;">
+            <a id="show-more" href="paginas/personagens.html" target="_self" rel="next">Veja mais</a>
+        </div>
+    </section>
+
+    <section class="section" id="news">
+        <div class="container">
+            <h2 class="section-title">Notícias e Eventos</h2>
+            <p>Fique por dentro das últimas atualizações, eventos e notícias de Genshin Impact!</p>
+            <!-- Adicione aqui uma lista de notícias e eventos recentes -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Genshin Impact</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
 </html>
