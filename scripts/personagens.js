@@ -23,8 +23,20 @@
         });
 
         const filterButtons = document.querySelectorAll('.filter-btn');
+
+        function setInitialActiveState() {
+            const todosButton = Array.from(filterButtons).find(btn => btn.textContent.toLowerCase() === 'todos');
+            if (todosButton) {
+                todosButton.classList.add('active');
+            }
+        }
+
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                this.classList.add('active');
+
                 const filter = this.textContent.toLowerCase();
                 characterCards.forEach(card => {
                     if (filter === 'todos' || card.querySelector('.character-vision').textContent.toLowerCase().includes(filter)) {
@@ -35,6 +47,8 @@
                 });
             });
         });
+
+        window.addEventListener('load', setInitialActiveState);
 
         window.addEventListener('scroll', function() {
             var header = document.querySelector('header');

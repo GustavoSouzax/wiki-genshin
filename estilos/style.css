@@ -90,6 +90,8 @@ nav {
 .nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.103);
     color: var(--cor-primaria);
+    border-radius: 3px;
+    transition: 0.5s;
 }
 
 .hero {
