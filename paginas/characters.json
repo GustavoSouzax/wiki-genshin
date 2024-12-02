@@ -1,0 +1,455 @@
+[
+    {
+        "name": "Aether/Lumine",
+        "vision": "Viajante",
+        "description": "Viajantes determinados, exploram Teyvat em busca de seu gêmeo perdido.",
+        "image": "../imagens/character-icons/ui-avataricon-traveler.png",
+        "region": "Viajante"
+    },
+    {
+        "name": "Albedo",
+        "vision": "Geo",
+        "description": "Alquimista calmo de Mondstadt, fascinado pela criação da vida.",
+        "image": "../imagens/character-icons/ui-avataricon-albedo.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Amber",
+        "vision": "Pyro",
+        "description": "Cavaleira extrovertida e otimista, especialista em combate aéreo.",
+        "image": "../imagens/character-icons/ui-avataricon-amber.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Ayaka",
+        "vision": "Cryo",
+        "description": "Elegante dama da família Kamisato, devota à sua cultura e dever.",
+        "image": "../imagens/character-icons/ui-avataricon-ayaka.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Barbara",
+        "vision": "Hydro",
+        "description": "Ídolo e curandeira carismática, traz esperança com sua música.",
+        "image": "../imagens/character-icons/ui-avataricon-barbara.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Beidou",
+        "vision": "Electro",
+        "description": "Capitã destemida da frota Crux, especialista em combate naval.",
+        "image": "../imagens/character-icons/ui-avataricon-beidou.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Bennett",
+        "vision": "Pyro",
+        "description": "Aventureiro azarado, mas otimista, com sede de grandes aventuras.",
+        "image": "../imagens/character-icons/ui-avataricon-bennett.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Candace",
+        "vision": "Hydro",
+        "description": "Guardiã do Aaru Village, forte e protetora de seu povo.",
+        "image": "../imagens/character-icons/ui-avataricon-candace.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Chongyun",
+        "vision": "Cryo",
+        "description": "Exorcista calmo e justo, sensível a energias sobrenaturais.",
+        "image": "../imagens/character-icons/ui-avataricon-chongyun.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Collei",
+        "vision": "Dendro",
+        "description": "Jovem arqueira determinada, com um passado de treinamento árduo.",
+        "image": "../imagens/character-icons/ui-avataricon-collei.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Cyno",
+        "vision": "Electro",
+        "description": "General astuto e leal, mestre do julgamento e punição.",
+        "image": "../imagens/character-icons/ui-avataricon-cyno.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Dehya",
+        "vision": "Pyro",
+        "description": "Mercenária leal e protetora, luta por seus amigos com bravura.",
+        "image": "../imagens/character-icons/ui-avataricon-dehya.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Diluc",
+        "vision": "Pyro",
+        "description": "Cavaleiro sombrio de Mondstadt, luta incansavelmente contra o mal.",
+        "image": "../imagens/character-icons/ui-avataricon-diluc.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Diona",
+        "vision": "Cryo",
+        "description": "Garçonete arqueira com ódio por álcool, mas faz drinks excelentes.",
+        "image": "../imagens/character-icons/ui-avataricon-diona.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Dori",
+        "vision": "Electro",
+        "description": "Mercadora astuta de Sumeru, sempre com o melhor negócio em mente.",
+        "image": "../imagens/character-icons/ui-avataricon-dori.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Eula",
+        "vision": "Cryo",
+        "description": "Cavaleira de Mondstadt com sede de vingança, mas com coração justo.",
+        "image": "../imagens/character-icons/ui-avataricon-eula.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Faruzan",
+        "vision": "Anemo",
+        "description": "Professora genial de Sumeru, especialista em máquinas antigas.",
+        "image": "../imagens/character-icons/ui-avataricon-faruzan.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Fischl",
+        "vision": "Electro",
+        "description": "Jovem investigadora excêntrica que se autodenomina \"Princesa do Julgamento\".",
+        "image": "../imagens/character-icons/ui-avataricon-fischl.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Ganyu",
+        "vision": "Cryo",
+        "description": "Adepta meio-qilin, trabalha incansavelmente como secretária de Liyue.",
+        "image": "../imagens/character-icons/ui-avataricon-ganyu.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Gorou",
+        "vision": "Geo",
+        "description": "General fiel de resistência em Inazuma, sempre ao lado de seus soldados.",
+        "image": "../imagens/character-icons/ui-avataricon-gorou.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Hu Tao",
+        "vision": "Pyro",
+        "description": "Diretora peculiar da Casa Funerária Wangsheng, com afinidade pelo sobrenatural.",
+        "image": "../imagens/character-icons/ui-avataricon-hutao.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Itto",
+        "vision": "Geo",
+        "description": "Líder Oni barulhento e competitivo, sempre buscando diversão.",
+        "image": "../imagens/character-icons/ui-avataricon-itto.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Jean",
+        "vision": "Anemo",
+        "description": "Grã-mestra interina dos Cavaleiros de Favonius, devota à proteção de Mondstadt.",
+        "image": "../imagens/character-icons/ui-avataricon-jean.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Kaeya",
+        "vision": "Cryo",
+        "description": "Cavaleiro carismático e estrategista, com um passado misterioso.",
+        "image": "../imagens/character-icons/ui-avataricon-kaeya.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Kazuha",
+        "vision": "Anemo",
+        "description": "Ronin sereno de Inazuma, guiado pela brisa e por sua liberdade.",
+        "image": "../imagens/character-icons/ui-avataricon-kazuha.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Keqing",
+        "vision": "Electro",
+        "description": "Líder trabalhadora de Liyue, confia no poder da humanidade.",
+        "image": "../imagens/character-icons/ui-avataricon-keqing.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Klee",
+        "vision": "Pyro",
+        "description": "Explosiva e travessa, adora causar caos com suas bombas.",
+        "image": "../imagens/character-icons/ui-avataricon-klee.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Kokomi",
+        "vision": "Hydro",
+        "description": "Sacerdotisa e estrategista talentosa, líder da Ilha Watatsumi.",
+        "image": "../imagens/character-icons/ui-avataricon-kokomi.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Layla",
+        "vision": "Cryo",
+        "description": "Estudante exausta, mas talentosa, especializada em astrologia e pesquisa.",
+        "image": "../imagens/character-icons/ui-avataricon-layla.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Lisa",
+        "vision": "Electro",
+        "description": ""
+    },
+    {
+        "name": "Aether/Lumine",
+        "vision": "Viajante",
+        "description": "Viajantes determinados, exploram Teyvat em busca de seu gêmeo perdido.",
+        "image": "../imagens/character-icons/ui-avataricon-traveler.png",
+        "region": "Viajante"
+    },
+    {
+        "name": "Albedo",
+        "vision": "Geo",
+        "description": "Alquimista calmo de Mondstadt, fascinado pela criação da vida.",
+        "image": "../imagens/character-icons/ui-avataricon-albedo.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Lisa",
+        "vision": "Electro",
+        "description": "Maga eletro relaxada, ex-estudante brilhante da Academia de Sumeru.",
+        "image": "../imagens/character-icons/ui-avataricon-lisa.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Mika",
+        "vision": "Cryo",
+        "description": "Cartógrafo tímido, devoto à exploração e mapeamento de Mondstadt.",
+        "image": "../imagens/character-icons/ui-avataricon-mika.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Mona",
+        "vision": "Hydro",
+        "description": "Astróloga orgulhosa, com habilidades preditivas incomparáveis, mas financeiramente falida.",
+        "image": "../imagens/character-icons/ui-avataricon-mona.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Nahida",
+        "vision": "Dendro",
+        "description": "Pequena Arconte Dendro, sábia e benevolente, conhecida como a 'Pequena Lorde Kusanali'.",
+        "image": "../imagens/character-icons/ui-avataricon-nahida.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Nilou",
+        "vision": "Hydro",
+        "description": "Dançarina graciosa e pacífica, canaliza a beleza da natureza em suas performances.",
+        "image": "../imagens/character-icons/ui-avataricon-nilou.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Ningguang",
+        "vision": "Geo",
+        "description": "Empresária poderosa e calculista, domina o cenário político de Liyue.",
+        "image": "../imagens/character-icons/ui-avataricon-ningguang.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Noelle",
+        "vision": "Geo",
+        "description": "Empregada aspirante a cavaleira, dedicada e leal ao seu dever.",
+        "image": "../imagens/character-icons/ui-avataricon-noelle.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Qiqi",
+        "vision": "Cryo",
+        "description": "Zumbi reanimada, com um comportamento calmo e habilidades de cura.",
+        "image": "../imagens/character-icons/ui-avataricon-qiqi.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Raiden Shogun",
+        "vision": "Electro",
+        "description": "Arconte Electro de Inazuma, busca a eternidade imutável.",
+        "image": "../imagens/character-icons/ui-avataricon-raiden.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Razor",
+        "vision": "Electro",
+        "description": "Selvagem e independente, criado por lobos, fiel aos seus instintos.",
+        "image": "../imagens/character-icons/ui-avataricon-razor.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Rosaria",
+        "vision": "Cryo",
+        "description": "Freira misteriosa e distante, com uma atitude indiferente e pragmática.",
+        "image": "../imagens/character-icons/ui-avataricon-rosaria.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Sara",
+        "vision": "Electro",
+        "description": "General leal a Raiden Shogun, com forte senso de dever e disciplina.",
+        "image": "../imagens/character-icons/ui-avataricon-sara.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Sayu",
+        "vision": "Anemo",
+        "description": "Ninja preguiçosa, habilidosa em furtividade e combate rápido.",
+        "image": "../imagens/character-icons/ui-avataricon-sayu.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Shenhe",
+        "vision": "Cryo",
+        "description": "Adepta com habilidades excepcionais, mas emocionalmente distante.",
+        "image": "../imagens/character-icons/ui-avataricon-shenhe.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Sucrose",
+        "vision": "Anemo",
+        "description": "Alquimista curiosa, apaixonada por bioquímica e novas descobertas.",
+        "image": "../imagens/character-icons/ui-avataricon-sucrose.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Tartaglia",
+        "vision": "Hydro",
+        "description": "Guerreiro audacioso e feroz, trabalha para a misteriosa Fatui.",
+        "image": "../imagens/character-icons/ui-avataricon-tartaglia.png",
+        "region": "Snezhnaya"
+    },
+    {
+        "name": "Thoma",
+        "vision": "Pyro",
+        "description": "Cavalheiro amigável e habilidoso, especializado em diplomacia e combate.",
+        "image": "../imagens/character-icons/ui-avataricon-thoma.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Tighnari",
+        "vision": "Dendro",
+        "description": "Guardião da floresta, dedicado à proteção da natureza e do conhecimento.",
+        "image": "../imagens/character-icons/ui-avataricon-tighnari.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Venti",
+        "vision": "Anemo",
+        "description": "Bardo jovial e descontraído, na verdade o Arconte Anemo de Mondstadt.",
+        "image": "../imagens/character-icons/ui-avataricon-venti.png",
+        "region": "Mondstadt"
+    },
+    {
+        "name": "Wanderer",
+        "vision": "Anemo",
+        "description": "Espírito livre e inquieto, vagueia em busca de respostas sobre si mesmo.",
+        "image": "../imagens/character-icons/ui-avataricon-wanderer.png",
+        "region": "Sumeru"
+    },
+    {
+        "name": "Xiangling",
+        "vision": "Pyro",
+        "description": "Chef criativa e enérgica, adora experimentar novos sabores.",
+        "image": "../imagens/character-icons/ui-avataricon-xiangling.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Xiao",
+        "vision": "Anemo",
+        "description": "Guardião solitário, protege Liyue de forças demoníacas incansavelmente.",
+        "image": "../imagens/character-icons/ui-avataricon-xiao.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Xingqiu",
+        "vision": "Hydro",
+        "description": "Jovem erudito e espadachim, apaixonado por justiça e poesia.",
+        "image": "../imagens/character-icons/ui-avataricon-xingqiu.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Xinyan",
+        "vision": "Pyro",
+        "description": "Rockeira rebelde, usa sua música para inspirar liberdade e individualidade.",
+        "image": "../imagens/character-icons/ui-avataricon-xinyan.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yanfei",
+        "vision": "Pyro",
+        "description": "Advogada meio-adepta, oferece seus serviços jurídicos com precisão.",
+        "image": "../imagens/character-icons/ui-avataricon-yanfei.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yaoyao",
+        "vision": "Dendro",
+        "description": "Jovem entusiasta e alegre, devota ao cultivo e aos seus amigos.",
+        "image": "../imagens/character-icons/ui-avataricon-yaoyao.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yelan",
+        "vision": "Hydro",
+        "description": "Agente secreta astuta de Liyue, especialista em missões arriscadas.",
+        "image": "",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yanfei",
+        "vision": "Pyro",
+        "description": "Advogada meio-adepta, oferece seus serviços jurídicos com precisão.",
+        "image": "../imagens/character-icons/ui-avataricon-yanfei.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yaoyao",
+        "vision": "Dendro",
+        "description": "Jovem entusiasta e alegre, devota ao cultivo e aos seus amigos.",
+        "image": "../imagens/character-icons/ui-avataricon-yaoyao.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yelan",
+        "vision": "Hydro",
+        "description": "Agente secreta astuta de Liyue, especialista em missões arriscadas.",
+        "image": "../imagens/character-icons/ui-avataricon-yelan.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Yoimiya",
+        "vision": "Pyro",
+        "description": "Especialista em fogos de artifício de Inazuma, seu entusiasmo ilumina os céus.",
+        "image": "../imagens/character-icons/ui-avataricon-yoimiya.png",
+        "region": "Inazuma"
+    },
+    {
+        "name": "Yun Jin",
+        "vision": "Geo",
+        "description": "Talentosa diretora de ópera de Liyue, combina arte e combate com graça.",
+        "image": "../imagens/character-icons/ui-avataricon-yunjin.png",
+        "region": "Liyue"
+    },
+    {
+        "name": "Zhongli",
+        "vision": "Geo",
+        "description": "O sábio e reservado Arconte Geo, conhecido por sua infinita sabedoria e serenidade.",
+        "image": "../imagens/character-icons/ui-avataricon-zhongli.png",
+        "region": "Liyue"
+    }
+]

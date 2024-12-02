@@ -1,89 +1,680 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki Genshin Personagens</title>
-    <link rel="stylesheet" href="../estilos/estilo-personagem.css">
+    <title>Genshin Impact - Personagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../estilos/estilo-personagens.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="header-logo">
-            <a href="../index.html" target="_self">
-                <img src="../imagens/icons/logo.png" alt="logo">
-            </a>
-        </div>
-        
-        <nav class="header-nav">
-            <a href="../index.html" target="_self">HOME</a>
-            <a href="personagens.html" target="_self" rel="next">PERSONAGENS</a>
-            <a href="#">LINKS</a>
-            <a href="#">SOBRE</a>
-        </nav>
-
-        <nav class="menu-mobile">
-            <a href="../index.html">HOME</a>
-            <a href="personagens.html">PERSONAGENS</a>
-            <a href="#services">LINKS</a>
-            <a href="#contact">SOBRE</a>
-        </nav>
-
-        <div id="menu-icon">
-            <img src="../imagens/icons/menu_icon_icon.png" alt="Menu icon">
-        </div>
-
-        <div class="header-logo-mobile">
-            <a href="index.html" target="_self">
-                <img src="../imagens/icons/logo.png" alt="logo">
-            </a>
-        </div>
-        
-        <div id="login">
-            <a href="paginas/login.html"><img src="../imagens/icons/login-icon.png" alt="login"></a>
-        </div>
-
-        <div id="suporte">
-            <a href=""><img src="../imagens/icons/suporte-icon.png" alt="suporte"></a>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Genshin Impact</a>
+                <div class="nav-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#characters">Personagens</a>
+                    <a href="#news">Notícias</a>
+                </div>
+                <div class="mobile-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
         </div>
     </header>
-    <main>
-        <h1>
-            Lista de personagens
-        </h1>
-        <section>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avataricon-furina.png" alt="">
-                <h2>Furina</h2>
-            </a>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avatarIcon-arlecchino.png" alt="">
-                <h2>Arlecchino</h2>
-            </a>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avataricon-ganyu.png" alt="">
-                <h2>Cocogoat</h2>
-            </a>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avataricon-hutao.png" alt="">
-                <h2>Hutao</h2>
-            </a>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avataricon-linette.png" alt="">
-                <h2>Linette</h2>
-            </a>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avataricon-ayaka.png" alt="">
-                <h2>Ayaka</h2>
-            </a>
-            <a href="">
-                <img class="imagem-personagem" src="../imagens/character-icons/ui-avataricon-kokomi.png" alt="">
-                <h2>Kokomi</h2>
-            </a>
-        </section>
-    </main>
-    <script src="../scripts/menu.js"></script>
-    <footer>
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/GustavoSouzax" class="social-icon" target="_blank" rel="author"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gustavo-souzax/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto: knightsworks@outlook.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="social-toggle">
+        <i class="fas fa-share-alt"></i>
+    </div>
+    <section class="section" id="characters">
+        <div class="container">
+            <h2 class="section-title">Personagens de Genshin Impact</h2>
+            
+            <div class="search-filter-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar personagens..." oninput="apenasLetras(event)">
+                </div>
+                <div class="filter-menu">
+                    <button class="filter-btn">Todos</button>
+                    <button class="filter-btn">Pyro</button>
+                    <button class="filter-btn">Hydro</button>
+                    <button class="filter-btn">Electro</button>
+                    <button class="filter-btn">Cryo</button>
+                    <button class="filter-btn">Anemo</button>
+                    <button class="filter-btn">Dendro</button>
+                    <button class="filter-btn">Geo</button>
+                </div>
+            </div>
 
+            <div class="character-grid">
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avatarIcon-arlecchino.png" alt="Arlecchino" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Cappuccino</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description">Fontaine</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/" alt="" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name"></h3>
+                        <p class="character-vision">Elemento:</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui_avataricon_navia.png" alt="Navia" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Navia</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-furina.png" alt="Furina" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Furina</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-charlotte.png" alt="Charlotte" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Charlotte</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-wriothesley.png" alt="Wriothesley" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Wriothesley</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-neuvillette.png" alt="Neuvillette" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Neuvillette</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-freminet.png" alt="Freminet" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Freminet</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-liney.png" alt="Lyney" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Lyney</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-linette.png" alt="Lynette" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Lynette</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-momoka.png" alt="Kirara" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Kirara</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-baizhuer.png" alt="Baizhu" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Baizhu</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-kaveh.png" alt="Kaveh" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Kaveh</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-mika.png" alt="Mika" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Mika</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-dehya.png" alt="Dehya" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Dehya</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-alhatham.png" alt="Alhatham" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Alhatham</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-yaoyao.png" alt="Yaoyao" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Yaoyao</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-wanderer.png" alt="Wanderer" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Caramujo</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-faruzan.png" alt="Faruzan" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Faruzan</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-layla.png" alt="Layla" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Layla</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-nahida.png" alt="Nahida" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Nahida</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-nilou.png" alt="Nilou" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Nilou</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-cyno.png" alt="Cyno" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Cyno</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-candace.png" alt="Candace" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Candace</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-dori.png" alt="Dori" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Dori</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-tighnari.png" alt="Tighnari" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Tighnari</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-collei.png" alt="Collei" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Collei</h3>
+                        <p class="character-vision">Elemento: Dendro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-heizo.png" alt="Heizo" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Heizo</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-shinobu.png" alt="Kuki Shinobu" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Kuki Shinobu</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-yelan.png" alt="Yelan" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Yelan</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-ayato.png" alt="Kamisato Ayato" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Ayato</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-yae.png" alt="Yae Miko" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Yae Miko</h3>
+                        <p class="character-vision">Elemento:</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-shenhe.png" alt="Shenhe" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Shenhe</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-yunjin.png" alt="Yunjin" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Yunjin</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-itto.png" alt="Arataki Itto" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Itto</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-gorou.png" alt="Gorou" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Gorou</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-tohma.png" alt="Thoma" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Thoma</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-kokomi.png" alt="Sangonomia Kokomi" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Kokomi</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-shougun.png" alt="Shogun Raiden" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Shogun Raiden</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-sara.png" alt="Kojou Sara" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Sara</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-yoimiya.png" alt="Yoimiya" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Yoimiya</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-sayu.png" alt="Sayu" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Sayu</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-ayaka.png" alt="Kamisato Ayaka" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Ayaka</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-kazuha.png" alt="Kazuha" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Kazuha</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-eula.png" alt="Eula" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Eula</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-feiyan.png" alt="Yanfei" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Yanfei</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-rosaria.png" alt="Rosaria" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Rosaria</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-hutao.png" alt="Hu Tao" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Hutao</h3>
+                        <p class="character-vision">Elemento:</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-xiao.png" alt="Xiao" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Xiao</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-ganyu.png" alt="Ganyu" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Cocogoat</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-albedo.png" alt="Albedo" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Albedo</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-zhongli.png" alt="Zhongli" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Zhongli</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-xinyan.png" alt="Xinyan" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Xinyan</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-tartaglia.png" alt="Tartaglia" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Tartaglia</h3>
+                        <p class="character-vision">Elemento:</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-diona.png" alt="Diona" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Diona</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-klee.png" alt="Klee" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Klee</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-venti.png" alt="Venti" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Venti</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-keqing.png" alt="Keqing" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Keqing</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description">A Yuheng do Liyue Qixing, conhecida por sua eficiência e dedicação.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-mona.png" alt="Mona" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Mona</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-qiqi.png" alt="Qiqi" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Qiqi</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-diluc.png" alt="Diluc" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Diluc</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description">O Cavaleiro Escuro de Mondstadt, dono da Adega do Alvorecer.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-jean-skin.png" alt="Jean" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Jean</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-sucrose.png" alt="Sucrose" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Sucrose</h3>
+                        <p class="character-vision">Elemento: Anemo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-chongyun.png" alt="Chongyun" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Chongyun</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-noel.png" alt="Noelle" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Noelle</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-bennett.png" alt="Bennett" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Bennett</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-fischl.png" alt="Fischl" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Fischl</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-ningguang.png" alt="Ningguang" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Ningguang</h3>
+                        <p class="character-vision">Elemento: Geo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-xingqiu.png" alt="Xingqiu" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Xiquinho</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-beidou.png" alt="Beidou" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Beidou</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-xiangling.png" alt="Xiangling" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Xiangling</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-razor.png" alt="Razor" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Razor</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-barbara.png" alt="Barbara" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Barbara</h3>
+                        <p class="character-vision">Elemento: Hydro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-lisa.png" alt="Lisa" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Lisa</h3>
+                        <p class="character-vision">Elemento: Electro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-kaeya.png" alt="Kaeya" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Kaeya</h3>
+                        <p class="character-vision">Elemento: Cryo</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../imagens/character-icons/ui-avataricon-ambor.png" alt="Amber" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name">Amber</h3>
+                        <p class="character-vision">Elemento: Pyro</p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Genshin Impact</p>
+        </div>
     </footer>
+    <script src="../scripts/personagens.js"></script>
 </body>
 </html>

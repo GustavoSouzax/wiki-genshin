@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact - Personagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../estilos/estilo-personagens.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Genshin Impact</a>
+                <div class="nav-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#characters">Personagens</a>
+                    <a href="#news">Notícias</a>
+                </div>
+                <div class="mobile-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/GustavoSouzax" class="social-icon" target="_blank" rel="author"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gustavo-souzax/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto: knightsworks@outlook.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="social-toggle">
+        <i class="fas fa-share-alt"></i>
+    </div>
+    <section class="section" id="characters">
+        <div class="container">
+            <h2 class="section-title">Personagens de Genshin Impact</h2>
+            
+            <div class="search-filter-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar personagens..." oninput="apenasLetras(event)">
+                </div>
+                <div class="filter-menu">
+                    <button class="filter-btn">Todos</button>
+                    <button class="filter-btn">Pyro</button>
+                    <button class="filter-btn">Hydro</button>
+                    <button class="filter-btn">Electro</button>
+                    <button class="filter-btn">Cryo</button>
+                    <button class="filter-btn">Anemo</button>
+                    <button class="filter-btn">Dendro</button>
+                    <button class="filter-btn">Geo</button>
+                </div>
+            </div>
+            <div id="loading-message" class="loading-message">Carregando personagens...</div>
+            <div id="error-message" class="error-message" style="display: none;">Erro ao carregar personagens.</div>
+<!--             <div class="character-grid">
+                <div class="character-card">
+                    <img src="" alt="Arlecchino" class="character-image">
+                    <div class="character-info">
+                        <h3 class="character-name"></h3>
+                        <p class="character-vision"></p>
+                        <p class="character-description"></p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Genshin Impact</p>
+        </div>
+    </footer>
+    <script src="../scripts/personagens-teste-api.js"></script>
+</body>
+</html>

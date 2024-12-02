@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genshin Impact - </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../estilos/style.css">
+
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Genshin Impact</a>
+                <div class="nav-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#characters">Personagens</a>
+                    <a href="#news">Notícias</a>
+                </div>
+                <div class="mobile-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/GustavoSouzax" class="social-icon" target="_blank" rel="author"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gustavo-souzax/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto: knightsworks@outlook.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="social-toggle">
+        <i class="fas fa-share-alt"></i>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Genshin Impact</p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const mMenu = document.querySelector(".mobile-menu");
+        const navMenu = document.querySelector(".nav-links");
+
+        mMenu.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            mMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        navLinks.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            mMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+        function handleSocialIcons() {
+            const socialToggle = document.querySelector('.social-toggle');
+            const socialIcons = document.querySelector('.social-icons');
+            const socialIconLinks = document.querySelectorAll('.social-icon');
+
+            if (window.innerWidth <= 768) {
+                socialToggle.addEventListener('click', function() {
+                    socialIcons.classList.toggle('active');
+                    if (socialIcons.classList.contains('active')) {
+                        socialIconLinks.forEach((icon, index) => {
+                            setTimeout(() => {
+                                icon.style.animation = `fadeInUp 0.3s ease forwards ${index * 0.1}s`;
+                            }, 50);
+                        });
+                    } else {
+                        socialIconLinks.forEach(icon => {
+                            icon.style.animation = '';
+                            icon.style.opacity = '0';
+                            icon.style.transform = 'translateY(20px)';
+                        });
+                    }
+                });
+            } else {
+                socialIcons.classList.remove('active');
+                socialIconLinks.forEach(icon => {
+                    icon.style.animation = '';
+                    icon.style.opacity = '1';
+                    icon.style.transform = 'translateY(0)';
+                });
+            }
+        }
+
+        window.addEventListener('load', handleSocialIcons);
+        window.addEventListener('resize', handleSocialIcons);
+    </script>
+</body>
+</html>
